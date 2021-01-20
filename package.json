@@ -1,25 +1,37 @@
 {
   "name": "ns-component-library-playground",
   "description": "A proof of concept component library",
-  "version": "0.1.0",
-  "license": "MIT",
+  "version": "0.1.1",
+  "private": false,
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ],
   "author": {
     "name": "Natan Severo",
     "email": "natanseverolp@gmail.com"
   },
-  "main": "dist/index.ts",
-  "module": "dist/index.ts",
-  "files": ["dist", "README.md"],
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "javascript",
+    "typescript"
+  ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/natansevero/ns-component-library-playground"  
+    "url": "https://github.com/natansevero/ns-component-library-playground"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "build:lib": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.ts,test.ts,__snapshot__"
+    "clean:lib": "rm -rf ./lib",
+    "build:lib": "tsc --build \"./tsconfig.json\""
   },
   "eslintConfig": {
     "extends": [
@@ -40,7 +52,6 @@
     ]
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
