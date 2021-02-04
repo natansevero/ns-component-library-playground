@@ -13,6 +13,8 @@ const App = () => {
           value={value} 
           onChange={(event: React.ChangeEvent<HTMLInputElement>) => setValue(event.target.value)} 
         />
+
+        {/* <Button name='test' /> */}
     </div>
   );
 }

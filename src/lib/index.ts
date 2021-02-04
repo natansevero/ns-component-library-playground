@@ -1,5 +1,7 @@
-import Input from './components/input/Input.component';
+import Input from './components/input/input.component';
+import Button from './components/button/button.component';
 
 export {
-    Input
+    Input,
+    Button
 }
