@@ -12,5 +12,5 @@ import { Input } from "ns-component-library-playground"
 
 ## To do
 
-- [ ] Config Eslint
-- [ ] Config Storybook
+- [ ] Eslint config
+- [ ] Storybook config
