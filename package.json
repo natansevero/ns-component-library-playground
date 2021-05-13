@@ -31,7 +31,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "clean:lib": "rm -rf ./lib",
-    "build:lib": "tsc --build \"./tsconfig.json\""
+    "build:lib": "tsc --build \"./tsconfig.lib.json\""
   },
   "eslintConfig": {
     "extends": [

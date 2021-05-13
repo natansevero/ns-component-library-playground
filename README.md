@@ -1,5 +1,5 @@
 # ns-component-library-playground
-A library of React components created using `create-react-app`.
+A library of React components created using `create-react-app`
 
 ## Installation
 Run the following command:
@@ -9,3 +9,8 @@ Run the following command:
 ```
 import { Input } from "ns-component-library-playground"
 ```
+
+## To do
+
+- [ ] Config Eslint
+- [ ] Config Storybook
